@@ -3,7 +3,7 @@
 Rejoins you on ponytown and others after being kicked from the session for AFK.
 
 ## How does it work?
-The extension will detect the play button (which is on the main pony.town screen) and if the play button exists (it will when you get kicked) it'll click it for you even if you're off tab. **You do not need to be on tab for this extension to work. It will rejoin on ponytown even off tab.**
+It pretty much rejoines ponytown after you get kicked for being AFK too long. I do recommend toggling the Auto Joiner to off if you're editing your OC while not in-game since as soon as you go on pony.town with the auto joiner toggled on it will click the play button instantly.
 
 ## How to install?
 **Steps:**
