@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Town Rejoiner",
+  "version": "1.0",
+  "description": "Bypass AFK I guess.",
+  "permissions": [
+    "tabs",
+    "alarms",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://test.pixel.horse/*",
+        "https://pony.town/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "rio16.png",
+      "48": "rio48.png",
+      "128": "rio128.png"
+    }
+  },
+  "icons": {
+    "16": "rio16.png",
+    "48": "rio48.png",
+    "128": "rio128.png"
+  }
+}
