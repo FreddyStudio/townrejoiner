@@ -14,7 +14,8 @@ function checkAutoJoinerStatus() {
 function clickPlayButton() {
   // Select the Play button using a more general selector
   const playButton = document.querySelector('.btn.btn-lg.btn-success.text-ellipsis.flex-grow-1') ||
-                     document.querySelector('.btn.btn-lg.btn-success.text-truncate.flex-grow-1');
+                     document.querySelector('.btn.btn-lg.btn-success.text-truncate.flex-grow-1') ||
+                     document.querySelector('.btn btn-lg btn-success text-truncate flex-grow-1');
   
   // If the Play button exists, click it
   if (playButton) {

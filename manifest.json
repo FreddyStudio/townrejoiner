@@ -15,7 +15,8 @@
     {
       "matches": [
         "https://test.pixel.horse/*",
-        "https://pony.town/*"
+        "https://pony.town/*",
+        "https://event.pony.town/*"
       ],
       "js": ["content.js"]
     }
