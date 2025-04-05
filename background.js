@@ -2,6 +2,7 @@
 function checkAndClick() {
   const urlsToMonitor = [
     "https://test.pixel.horse/*",
+    "https://event.pony.town/*",
     "https://pony.town/*"
   ];
 
@@ -13,7 +14,6 @@ function checkAndClick() {
           files: ['content.js']
         });
 
-        // Store the active URLs
         chrome.storage.local.set({ [urlPattern]: tab.url });
       });
     });
@@ -36,7 +36,6 @@ checkAndClick();
 // Listen for messages from content scripts
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === 'checkAutoJoinerStatus') {
-    // Check the auto joiner status and respond
     chrome.storage.local.get(['autoJoinerEnabled'], function(result) {
       sendResponse({ autoJoinerEnabled: result.autoJoinerEnabled !== false });
     });

@@ -2,8 +2,7 @@
 function checkAutoJoinerStatus() {
   chrome.runtime.sendMessage({ action: 'checkAutoJoinerStatus' }, function(response) {
     if (chrome.runtime.lastError) {
-      console.error('Runtime error:', chrome.runtime.lastError);
-      setTimeout(checkAutoJoinerStatus, 1000); // Retry after 1 second
+      setTimeout(checkAutoJoinerStatus, 1000);
     } else if (response && response.autoJoinerEnabled) {
       clickPlayButton();
     }
@@ -12,15 +11,12 @@ function checkAutoJoinerStatus() {
 
 // Function to click the Play button
 function clickPlayButton() {
-  // Select the Play button using a more general selector
   const playButton = document.querySelector('.btn.btn-lg.btn-success.text-ellipsis.flex-grow-1') ||
                      document.querySelector('.btn.btn-lg.btn-success.text-truncate.flex-grow-1') ||
                      document.querySelector('.btn btn-lg btn-success text-truncate flex-grow-1');
   
-  // If the Play button exists, click it
   if (playButton) {
     playButton.click();
-    console.log('Play button clicked');
   }
 }
 

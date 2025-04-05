@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Town Rejoiner",
-  "version": "1.0",
-  "description": "Bypass AFK I guess.",
+  "version": "1.1",
+  "description": "Automatically rejoin your Pony Town session after getting kicked.",
   "permissions": [
     "tabs",
     "alarms",
@@ -18,20 +18,17 @@
         "https://pony.town/*",
         "https://event.pony.town/*"
       ],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "css": ["styles.css"]
     }
   ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "rio16.png",
-      "48": "rio48.png",
-      "128": "rio128.png"
+      "128": "images/rio128.png"
     }
   },
   "icons": {
-    "16": "rio16.png",
-    "48": "rio48.png",
-    "128": "rio128.png"
+    "128": "images/rio128.png"
   }
 }
