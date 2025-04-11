@@ -32,7 +32,7 @@ body {
   overflow-x: hidden;
   min-height: 200px;
   position: relative;
-  padding-bottom: 30px; /* Space for footer */
+  padding-bottom: 30px; 
 }
 
 .container {
